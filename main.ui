@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="trainingTab">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Обучение</string>
+       </attribute>
+       <widget class="QWidget" name="gridLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>30</y>
+          <width>560</width>
+          <height>410</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="1" column="0">
+          <widget class="QGroupBox" name="pathsGroupBox">
+           <property name="title">
+            <string>пути к папкам</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="4" column="2">
+             <widget class="QGroupBox" name="trainingStatusGroupBox">
+              <property name="title">
+               <string>Статус обучения</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_4">
+               <item row="0" column="0">
+                <widget class="QTextEdit" name="trainingLogTextEdit">
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLineEdit" name="croppedImagesLineEdit">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QLabel" name="croppedImagesLabel">
+              <property name="text">
+               <string>Путь к обрезанным объектам</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="selectCroppedImagesButton">
+              <property name="text">
+               <string>Обзор...</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="selectSourceImagesButton">
+              <property name="text">
+               <string>Обзор…</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QLabel" name="configFilePathLabel">
+              <property name="text">
+               <string>Путь к файлу конфигурации</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="sourceImagesLineEdit">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLineEdit" name="configFilePathLineEdit">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="selectConfigFileButton">
+              <property name="text">
+               <string>Обзор...</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QLabel" name="lineEditSourceImages">
+              <property name="text">
+               <string>Путь к исходным кадрам</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0" colspan="2">
+             <widget class="QGroupBox" name="tagsAndNetworkGroupBox">
+              <property name="title">
+               <string>Теги и управление сетью</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_3">
+               <item row="2" column="1">
+                <widget class="QComboBox" name="tagComboBox"/>
+               </item>
+               <item row="3" column="0">
+                <widget class="QPushButton" name="resetButton">
+                 <property name="text">
+                  <string>сброс</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="newTagLineEdit"/>
+               </item>
+               <item row="3" column="1">
+                <widget class="QPushButton" name="trainButton">
+                 <property name="text">
+                  <string>обучить</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="selectTagLabel">
+                 <property name="text">
+                  <string>Выбор тега:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="newTagLabel">
+                 <property name="text">
+                  <string>Новый тег:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QPushButton" name="trainMoreButton">
+                 <property name="text">
+                  <string>дообучить</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Работа</string>
+       </attribute>
+       <widget class="QWidget" name="gridLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>39</x>
+          <y>80</y>
+          <width>418</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="1">
+          <widget class="QGroupBox" name="pathsGroupBox_2">
+           <property name="title">
+            <string>пути к папкам</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="1" column="0">
+             <widget class="QPushButton" name="selectCroppedImagesButton_2">
+              <property name="text">
+               <string>Обзор...</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QLabel" name="croppedImagesLabel_2">
+              <property name="text">
+               <string>Путь к обрезанным объектам:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="sourceImagesLabel">
+              <property name="text">
+               <string>Путь к исходным кадрам:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="croppedImagesLineEdit_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_3">
+              <property name="text">
+               <string>Запустить обрезку</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="sourceImagesLineEdit_2">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="selectSourceImagesButton_2">
+              <property name="text">
+               <string>Обзор...</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QGroupBox" name="groupBox_2">
+              <property name="title">
+               <string>Статус обработки </string>
+              </property>
+              <widget class="QTextEdit" name="textEdit">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>50</y>
+                 <width>104</width>
+                 <height>87</height>
+                </rect>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item row="2" column="2" rowspan="2">
+             <widget class="QGroupBox" name="croppingParametersGroupBox">
+              <property name="title">
+               <string>Параметры обрезки</string>
+              </property>
+              <widget class="QLabel" name="borderSizeLabel">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>70</y>
+                 <width>121</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Граница (пикселей):</string>
+               </property>
+              </widget>
+              <widget class="QSpinBox" name="epochSpinBox">
+               <property name="geometry">
+                <rect>
+                 <x>41</x>
+                 <y>131</y>
+                 <width>71</width>
+                 <height>51</height>
+                </rect>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLabel" name="image_label">
+              <property name="text">
+               <string>изображение</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
