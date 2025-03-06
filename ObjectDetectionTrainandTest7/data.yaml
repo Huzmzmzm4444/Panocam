@@ -1,0 +1,19 @@
+annotation_format: YOLO
+image_size:
+- 640
+- 640
+names:
+- bird
+- moon
+- planes
+- sun
+nc: 4
+roboflow:
+  license: CC BY 4.0
+  project: my-first-project-dr
+  url: https://universe.roboflow.com/darya-ai/my-first-project-dr/dataset/1
+  version: 1
+  workspace: darya-ai
+test: ''
+train: ''
+val: null
