@@ -459,7 +459,7 @@ class MainWindow(QtWidgets.QMainWindow):
             self.croppedImagesLineEdit_2.setText(folder)
 
 
-    def classification_images(self, model, cropped_images_path: str, min_proba: float = 0.5) -> list[str] | list:
+    def classification_images(self, model, cropped_images_path: str, min_proba: float = 0.5):
         output_folder = 'classified'
         predictions = []
         labels = ['planes', 'bird', 'moon', 'sun']  # Важно, чтобы labels совпадали с обученной моделью
